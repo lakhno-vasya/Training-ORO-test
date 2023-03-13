@@ -34,12 +34,16 @@ class TrainingUserNamingBundleInstaller implements Installation, ExtendExtension
      */
     public function up(Schema $schema, QueryBag $queries)
     {
+        /** Tables generation **/
         $this->createTrainingUserNamingTypeTable($schema);
 
+        /** Additional relations */
         $this->addRelationFromUser($schema);
     }
 
     /**
+     * Create training_user_naming_type table
+     *
      * @param Schema $schema
      */
     protected function createTrainingUserNamingTypeTable(Schema $schema)

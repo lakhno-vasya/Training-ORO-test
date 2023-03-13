@@ -4,7 +4,6 @@ namespace Training\Bundle\UserNamingBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\Config;
-use phpDocumentor\Reflection\Types\Integer;
 use Training\Bundle\UserNamingBundle\Model\ExtendUserNamingType;
 
 /**
@@ -27,14 +26,14 @@ class UserNamingType extends ExtendUserNamingType
      * @ORM\Column(type="integer", name="id")
      * @ORM\GeneratedValue(strategy="AUTO")
      */
-    private Integer $id;
+    private $id;
 
     /**
      * @var string
      *
      * @ORM\Column(type="string", length=64, nullable=false)
      */
-    private string $title;
+    private $title;
 
     /**
      * @var string
@@ -42,18 +41,18 @@ class UserNamingType extends ExtendUserNamingType
      *
      * @ORM\Column(type="string", length=255, nullable=false)
      */
-    private string $format;
+    private $format;
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getId(): int
+    public function getId()
     {
         return $this->id;
     }
 
     /**
-     * @return string
+     * @return string|null
      */
     public function getTitle()
     {
@@ -74,7 +73,7 @@ class UserNamingType extends ExtendUserNamingType
     /**
      * @return string
      */
-    public function getFormat(): string
+    public function getFormat()
     {
         return $this->format;
     }

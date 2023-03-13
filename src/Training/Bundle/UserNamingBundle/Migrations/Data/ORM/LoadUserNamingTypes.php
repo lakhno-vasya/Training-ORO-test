@@ -9,9 +9,9 @@ use Training\Bundle\UserNamingBundle\Entity\UserNamingType;
 class LoadUserNamingTypes extends AbstractFixture
 {
     private array $namingTypes = [
-        'Official' => 'PREFIX FIRST MIDDLE LAST SUFFIX',
-        'Unofficial' => 'FIRST LAST',
-        'First name only' => 'FIRST'
+        'Official'         => 'PREFIX FIRST MIDDLE LAST SUFFIX',
+        'Unofficial'       => 'FIRST LAST',
+        'First name only'  => 'FIRST'
     ];
 
     /**
