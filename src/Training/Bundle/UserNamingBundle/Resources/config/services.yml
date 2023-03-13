@@ -2,8 +2,7 @@ services:
   Training\Bundle\UserNamingBundle\Provider\EntityNameProviderDecorator:
     decorates: oro_locale.entity_name_provider
     arguments:
-      - 'oro_locale.entity_name_provider'
-    decoration_inner_name: 'oro_locale.entity_name_provider'
+      - '@.inner'
     tags:
       - { name: oro_entity.name_provider, priority: -70 }
 
