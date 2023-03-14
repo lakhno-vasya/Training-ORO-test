@@ -1,0 +1,14 @@
+{% set typeId = record.getValue('id') %}
+
+<div>
+    <strong>ID:</strong>
+    {{ typeId }}
+</div>
+<div>
+    <strong>Format:</strong>
+    {{ value }}
+</div>
+<div>
+    <strong>Full name:</strong>
+    {{ value|full_name_filter }}
+</div>
