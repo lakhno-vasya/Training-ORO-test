@@ -19,6 +19,10 @@ use Training\Bundle\UserNamingBundle\Model\ExtendUserNamingType;
  *          "grid"={
  *              "default"="training-user-naming-types-grid"
  *          }
+ *          "security"={
+ *              "type"="ACL",
+ *              "group_name"="",
+ *          }
  *      }
  * )
  */
