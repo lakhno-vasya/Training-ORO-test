@@ -34,7 +34,7 @@ class UserNamingType extends ExtendUserNamingType
      * @ConfigField(
      *      defaultValues={
      *          "importexport"={
-     *              "order"=10
+     *              "order"=1
      *          }
      *      }
      * )
@@ -48,7 +48,7 @@ class UserNamingType extends ExtendUserNamingType
      * @ConfigField(
      *      defaultValues={
      *          "importexport"={
-     *              "order"=20
+     *              "order"=2
      *          }
      *      }
      * )
@@ -61,7 +61,7 @@ class UserNamingType extends ExtendUserNamingType
      * @ConfigField(
      *      defaultValues={
      *          "importexport"={
-     *              "order"=30
+     *              "order"=3
      *          }
      *      }
      * )
