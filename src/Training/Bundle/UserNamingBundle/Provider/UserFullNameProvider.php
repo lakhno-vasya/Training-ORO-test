@@ -3,8 +3,9 @@
 namespace Training\Bundle\UserNamingBundle\Provider;
 
 use Oro\Bundle\UserBundle\Entity\User;
+use Twig\Extension\RuntimeExtensionInterface;
 
-class UserFullNameProvider
+class UserFullNameProvider implements RuntimeExtensionInterface
 {
     /**
      * @param User $user
@@ -23,5 +24,21 @@ class UserFullNameProvider
                 'SUFFIX' => $user->getNameSuffix(),
             ]
         );
+    }
+
+    /**
+     * @param string $format
+     * @return string
+     */
+    public function getFullNameExample(string $format): string
+    {
+        $user = new User();
+        $user->setNamePrefix('User')
+            ->setFirstName('John')
+            ->setMiddleName('Jon')
+            ->setLastName('Doe')
+            ->setNameSuffix('Sr');
+
+        return $this->getFullName($user, $format);
     }
 }
