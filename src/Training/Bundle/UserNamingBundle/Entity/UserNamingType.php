@@ -20,6 +20,10 @@ use Oro\Bundle\EntityConfigBundle\Metadata\Annotation\ConfigField;
  *          "grid"={
  *              "default"="training-user-naming-types-grid"
  *          }
+ *          "security"={
+ *              "type"="ACL",
+ *              "group_name"="",
+ *          }
  *      }
  * )
  */

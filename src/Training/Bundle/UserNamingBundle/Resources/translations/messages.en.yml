@@ -15,3 +15,8 @@ training.usernaming:
 
 oro.user:
   naming_type.label: 'User Naming Type'
+
+security:
+  training_user_naming_info:
+    label: 'User naming type information'
+    description: 'Show full User naming information at User view page'
